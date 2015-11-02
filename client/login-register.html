@@ -1,0 +1,23 @@
+<template name="register">
+	<form>
+		<label for="username">Name</label>
+		<input name="username" id="username" type="text">
+		<label for="email">Email</label>
+		<input name="email" id="email" type="email">
+		<label for="password">Password</label>
+		<input name="password" id="password" type="password">
+		<button type="submit">Create</button>
+		<a href="/">Go Back</a>
+	</form>
+</template>
+
+<template name="login">
+	<form>
+		<label for="email">Email</label>
+		<input name="email" id="email" type="email">
+		<label for="password">Password</label>
+		<input name="password" id="password" type="password">
+		<button type="submit">Login</button>
+		<a href="register" class="register">Create</a>
+	</form>
+</template>

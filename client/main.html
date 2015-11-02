@@ -1,0 +1,16 @@
+<template name="layout">
+	{{#if this}}
+	<nav>
+		<ul>
+			<li><a href="">{{this.username}}</a></li>
+			<li><a href="" class="logout">Logout</a></li>
+		</ul>
+	</nav>
+	{{/if}}
+	<main>
+		<div class="container">
+			{{>yield}}
+		</div>
+	</main>
+	<footer class="page-footer">Soy un footer</footer>
+</template>
