@@ -1,4 +1,9 @@
 <template name="home">
 <h4>List</h4>
-<a href="" class="create-item">Create new item</a>
+<a href="{{pathFor 'list'}}" class="create-item">Create new  list</a>
+<ul>
+	{{#each lists}}
+	<li> <a href="list/{{_id}}"> {{_id}} {{day}}</a> </li>
+	{{/each}}
+</ul>
 </template>

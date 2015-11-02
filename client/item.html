@@ -1,0 +1,23 @@
+<template name="listItems">
+<h5>List for {{list.day}} {{list._id}} </h5>
+<form>
+	<label for="time">Start Time</label>
+	<input name="time" id="time" type="time">
+	<label for="time">End Time</label>
+	<input name="time" id="time" type="time">
+	<label for="item">Item</label>
+	<input name="item" id="item" type="text">
+	<button type="submit">Add</button>
+	<a href="/">Go Back</a>
+</form>
+
+
+<ul>
+	{{#each list.items}}
+	<li>
+      <input type="checkbox" id="itemId" checked="checked" />
+      <label for="itemId">{{itemName}}</label>
+	</li>
+	{{/each}}
+</ul>
+</template>
